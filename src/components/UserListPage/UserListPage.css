@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+}
+
+.inputStyler {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: none;
+}
+
+.formBox {
+  display: flex;
+  align-items: center;
+  /* column-gap: 0.5rem; */
+  margin: auto;
+  width: 50%;
+}
+
+.svgSrchIcon {
+  position: relative;
+  right: 2rem;
+  color: #000000;
+  width: 2rem;
+  height: 2.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding-left: 0.1rem;
+  background-color: #fff;
+}
+
+.histryBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.displBox {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  width: 150px;
+  height: 200px;
+  overflow-y: scroll;
+  background-color: aliceblue;
+  color: #000000;
+  z-index: 1;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.selectBox{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .displBox {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .inputStyler {
+    min-width: 272px;
+  }
+  .svgSrchIcon {
+    min-width: 29px;
+  }
+}
